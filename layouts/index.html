@@ -30,17 +30,19 @@
           <span>{{ $hero.Params.rubrique }}</span>
         </div>
       </div>
-      <aside class="hero-aside">
-        <h3>Dans ce numéro</h3>
-        <ul class="mini-list">
-          {{ range first 4 $others }}
-          <li>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            <span class="meta">{{ .Params.rubrique }} — {{ .Params.readingTime }}</span>
-          </li>
-          {{ end }}
-        </ul>
-      </aside>
+    </div>
+    <div class="wrap">
+      <div class="hero-secondary">
+        {{ range first 2 $others }}
+        <article class="card">
+          <a href="{{ .RelPermalink }}">
+            <h3>{{ .Title }}</h3>
+            <p>{{ .Params.summary }}</p>
+            <span class="meta">{{ .Params.author }} — {{ .Params.readingTime }}</span>
+          </a>
+        </article>
+        {{ end }}
+      </div>
     </div>
   </section>
 

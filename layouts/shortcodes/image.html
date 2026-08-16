@@ -9,7 +9,7 @@
   Avec une légende affichée sous l'image :
     {{< image src="ma-photo.jpg" alt="Description" caption="Ma légende" >}}
 
-  Pour choisir une largeur différente de 900px par défaut :
+  Pour choisir une largeur différente de 400px par défaut :
     {{< image src="ma-photo.jpg" alt="Description" largeur="500" >}}
 
   IMPORTANT : le fichier image doit être placé dans le MÊME DOSSIER que
@@ -19,7 +19,7 @@
 {{ $src := .Get "src" }}
 {{ $alt := .Get "alt" }}
 {{ $caption := .Get "caption" }}
-{{ $largeur := .Get "largeur" | default "900" }}
+{{ $largeur := .Get "largeur" | default "400" }}
 
 {{ $image := .Page.Resources.GetMatch $src }}
 

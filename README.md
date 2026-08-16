@@ -53,7 +53,7 @@ hero: false
    ```
    {{< image src="ma-photo.jpg" alt="Description" caption="Ma légende" >}}
    ```
-4. Pour changer la largeur d'affichage (900 pixels par défaut) :
+4. Pour changer la largeur d'affichage (400 pixels par défaut) :
    ```
    {{< image src="ma-photo.jpg" alt="Description" largeur="500" >}}
    ```
