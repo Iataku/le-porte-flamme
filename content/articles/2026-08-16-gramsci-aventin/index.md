@@ -14,9 +14,6 @@ Giacomo Matteotti, député italien socialiste est assassiné par un groupe arm�
 
 Les communistes sont dirigés par **Gramsci** qui a été désigné secrétaire générale récemment et qui, mène un combat contre le bordiguisme qui refuse tout compromis avec l'entrée au parti de groupes socialistes. En 1924 donc, Gramsci réussit à faire adhérer au parti une section socialiste révolutionnaire avec le soutien du conseil du parti. 
 
-Pour insérer une image (place le fichier image dans ce même dossier,
-à côté de index.md, puis écris) :
-
 {{< image src="Gramsci.png" alt="Portrait de Antonio Gramsci" caption="Portrait de Antonio Gramsci" >}}
 
 ## Le Retrait à l'Aventin
