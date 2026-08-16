@@ -12,7 +12,7 @@ title = "Le Porte-Flamme"
 # dans le champ "rubrique" de tes articles.
 [params]
   tagline = "Revue politique et culturelle — nouvelle série"
-  rubriques = ["Politique", "International", "Société", "Culture", "Histoire"]
+  rubriques = ["National", "International", "Culture", "Histoire"]
 
 [markup.goldmark.renderer]
   # Autorise les articles à contenir un peu de HTML si besoin (facultatif,

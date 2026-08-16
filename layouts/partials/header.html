@@ -23,7 +23,10 @@
   <div class="wrap">
     <ul>
       {{ range .Site.Params.rubriques }}
-      <li><a href="{{ "/" | relURL }}#{{ . | urlize }}">{{ . }}</a></li>
+        {{ $page := site.GetPage (printf "rubriques/%s" (. | urlize)) }}
+        {{ if $page }}
+        <li><a href="{{ $page.RelPermalink }}">{{ . }}</a></li>
+        {{ end }}
       {{ end }}
     </ul>
   </div>

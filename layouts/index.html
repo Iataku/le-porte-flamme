@@ -46,13 +46,15 @@
 
   {{ range $rubrique := .Site.Params.rubriques }}
     {{ $pages := where $others "Params.rubrique" $rubrique }}
+    {{ $rubriquePage := site.GetPage (printf "rubriques/%s" ($rubrique | urlize)) }}
     {{ if gt (len $pages) 0 }}
     <section class="rubrique" id="{{ $rubrique | urlize }}">
       <div class="wrap">
         <div class="rubrique-head">
           <div class="wedge"></div>
-          <h2>{{ $rubrique }}</h2>
+          <h2>{{ if $rubriquePage }}<a href="{{ $rubriquePage.RelPermalink }}">{{ $rubrique }}</a>{{ else }}{{ $rubrique }}{{ end }}</h2>
           <div class="rule"></div>
+          {{ if $rubriquePage }}<a href="{{ $rubriquePage.RelPermalink }}" class="voir-tout">Voir tout →</a>{{ end }}
         </div>
         <div class="article-grid">
           {{ range $pages }}

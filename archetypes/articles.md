@@ -2,7 +2,7 @@
 title: "Titre de l'article"
 date: {{ .Date }}
 author: "Ton nom"
-rubrique: "Politique"
+rubrique: "National"
 readingTime: "5 min"
 summary: "Une ou deux phrases qui donnent envie de lire l'article."
 hero: false

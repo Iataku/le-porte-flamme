@@ -23,7 +23,7 @@ hero: false
 ---
 ```
 
-   - `rubrique` doit être exactement l'une de : `Politique`, `International`, `Société`, `Culture`, `Histoire`
+   - `rubrique` doit être exactement l'une de : `National`, `International`, `Culture`, `Histoire`
    - `hero: true` si tu veux que cet article soit mis en avant en première page (laisse `false` pour tous les autres)
 
 4. En dessous, écris ton article normalement, en Markdown :
@@ -46,14 +46,35 @@ Le plus simple, sans rien installer : directement depuis le site github.com.
 
 Suis la publication dans l'onglet **Actions** du dépôt (coche verte = article en ligne).
 
+### Si tu te trompes de rubrique
+
+Avant de publier, le site vérifie automatiquement que la `rubrique` de chaque
+article existe bien parmi les quatre autorisées. Si tu écris par exemple
+`rubrique: "Nationale"` au lieu de `"National"`, la publication **échoue
+volontairement** (coche rouge dans Actions) avec un message qui te dit
+exactement quoi corriger — plutôt que de publier un article invisible
+sans que tu t'en rendes compte.
+
+### Consulter les articles par rubrique
+
+Chaque rubrique a sa propre page, listant tous ses articles :
+`/rubriques/national/`, `/rubriques/international/`, `/rubriques/culture/`,
+`/rubriques/histoire/`. Ce sont ces pages que le menu du haut affiche.
+
+Pour ajouter une cinquième rubrique un jour : ajoute-la dans `hugo.toml`
+(liste `rubriques`) ET crée un fichier correspondant dans
+`content/rubriques/` (copie un des quatre existants et change le titre).
+
 ## Structure du projet
 
 ```
 porte-flamme-hugo/
 ├── content/articles/       ← tes articles, un fichier .md par article
+├── content/rubriques/      ← une page par rubrique (ne pas modifier sauf ajout de rubrique)
 ├── static/css/style.css    ← le style visuel du site (CSS séparé du HTML)
 ├── static/images/          ← le logo et les images du site
 ├── layouts/                ← les gabarits HTML (structure des pages, ne pas modifier)
+├── scripts/verifier_rubriques.py  ← vérifie les rubriques avant publication
 ├── archetypes/articles.md  ← modèle utilisé par la commande "hugo new"
 ├── hugo.toml                ← configuration générale du site
 └── .github/workflows/      ← publication automatique sur GitHub Pages

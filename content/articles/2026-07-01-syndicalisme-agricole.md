@@ -2,7 +2,7 @@
 title: "Le syndicalisme agricole face au dérèglement climatique"
 date: 2026-07-01
 author: "Camille Verdier"
-rubrique: "Société"
+rubrique: "National"
 readingTime: "8 min"
 summary: "Sécheresses, grêle, gel tardif : les organisations paysannes réinventent leurs revendications à l'heure du climat qui change."
 hero: false

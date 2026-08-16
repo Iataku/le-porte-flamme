@@ -2,7 +2,7 @@
 title: "Qui possède la ville ? Enquête sur la financiarisation du logement populaire"
 date: 2026-08-16
 author: "La rédaction"
-rubrique: "Politique"
+rubrique: "National"
 readingTime: "15 min"
 summary: "Des grands ensembles aux centres-villes rénovés, une nouvelle géographie de la propriété redessine qui a le droit d'habiter où. Notre dossier suit l'argent, quartier par quartier."
 hero: true

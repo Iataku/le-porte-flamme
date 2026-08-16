@@ -223,6 +223,17 @@ nav.mainnav a:hover{ background: var(--rouge); color:#fff; }
   flex-shrink:0;
 }
 .rubrique-head .rule{ flex:1; height:2px; background:var(--noir); }
+.rubrique-head .voir-tout{
+  font-family:var(--mono);
+  font-size:0.72rem;
+  text-transform:uppercase;
+  letter-spacing:0.04em;
+  color:var(--rouge);
+  white-space:nowrap;
+  flex-shrink:0;
+}
+.rubrique-head .voir-tout:hover{ text-decoration:underline; }
+.rubrique-head h2 a:hover{ color:var(--rouge); }
 
 .article-grid{
   display:grid;
