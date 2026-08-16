@@ -1,0 +1,74 @@
+{{ define "main" }}
+{{ $articles := (where site.RegularPages "Section" "articles").ByDate.Reverse }}
+
+{{ if eq (len $articles) 0 }}
+
+  <section class="rubrique">
+    <div class="wrap">
+      <p style="padding:40px 0; color:var(--ardoise);">
+        Aucun article pour le moment. Ajoute un fichier .md dans content/articles/ pour commencer.
+      </p>
+    </div>
+  </section>
+
+{{ else }}
+
+  {{ $heroCandidates := where $articles "Params.hero" true }}
+  {{ $hero := index $articles 0 }}
+  {{ if gt (len $heroCandidates) 0 }}{{ $hero = index $heroCandidates 0 }}{{ end }}
+  {{ $others := where $articles "RelPermalink" "!=" $hero.RelPermalink }}
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">À la une</span>
+        <h1><a href="{{ $hero.RelPermalink }}">{{ $hero.Title }}</a></h1>
+        <p class="dek">{{ $hero.Params.summary }}</p>
+        <div class="byline">
+          <span><strong>Par {{ $hero.Params.author }}</strong></span>
+          <span>{{ $hero.Params.readingTime }}</span>
+          <span>{{ $hero.Params.rubrique }}</span>
+        </div>
+      </div>
+      <aside class="hero-aside">
+        <h3>Dans ce numéro</h3>
+        <ul class="mini-list">
+          {{ range first 4 $others }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <span class="meta">{{ .Params.rubrique }} — {{ .Params.readingTime }}</span>
+          </li>
+          {{ end }}
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  {{ range $rubrique := .Site.Params.rubriques }}
+    {{ $pages := where $others "Params.rubrique" $rubrique }}
+    {{ if gt (len $pages) 0 }}
+    <section class="rubrique" id="{{ $rubrique | urlize }}">
+      <div class="wrap">
+        <div class="rubrique-head">
+          <div class="wedge"></div>
+          <h2>{{ $rubrique }}</h2>
+          <div class="rule"></div>
+        </div>
+        <div class="article-grid">
+          {{ range $pages }}
+          <article class="card">
+            <a href="{{ .RelPermalink }}">
+              <h3>{{ .Title }}</h3>
+              <p>{{ .Params.summary }}</p>
+              <span class="meta">{{ .Params.author }} — {{ .Params.readingTime }}</span>
+            </a>
+          </article>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+    {{ end }}
+  {{ end }}
+
+{{ end }}
+{{ end }}

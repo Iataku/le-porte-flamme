@@ -1,0 +1,21 @@
+# Configuration du site — Le Porte-Flamme
+#
+# IMPORTANT : remplace TON-PSEUDO et NOM-DU-DEPOT ci-dessous par tes
+# vraies valeurs GitHub une fois le dépôt créé, sinon les liens et images
+# risquent de ne pas s'afficher correctement une fois le site publié.
+baseURL = "https://TON-PSEUDO.github.io/NOM-DU-DEPOT/"
+languageCode = "fr-fr"
+title = "Le Porte-Flamme"
+
+# Les rubriques disponibles, dans l'ordre où elles apparaissent sur le site.
+# Pour ajouter une rubrique : ajoute-la ici ET utilise le même nom exact
+# dans le champ "rubrique" de tes articles.
+[params]
+  tagline = "Revue politique et culturelle — nouvelle série"
+  rubriques = ["Politique", "International", "Société", "Culture", "Histoire"]
+
+[markup.goldmark.renderer]
+  # Autorise les articles à contenir un peu de HTML si besoin (facultatif,
+  # utile par exemple pour intégrer une vidéo). Laisse "false" si tu ne
+  # veux jamais écrire de HTML dans tes articles.
+  unsafe = false

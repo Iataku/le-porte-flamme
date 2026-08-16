@@ -1,0 +1,30 @@
+<div class="topbar">
+  <div class="wrap">
+    <span>{{ upper .Site.Title }} — FONDÉE EN 2019</span>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="nameplate-row">
+      <div class="logo-badge">
+        <img src="{{ "images/logo.png" | relURL }}" alt="Logo {{ .Site.Title }}">
+      </div>
+      <a href="{{ "/" | relURL }}" class="nameplate">{{ .Site.Title }}</a>
+    </div>
+    <div class="tagline-row">
+      <div class="tagline">{{ .Site.Params.tagline }}</div>
+      <div class="issue-info">PARAÎT CHAQUE SAISON</div>
+    </div>
+  </div>
+</header>
+
+<nav class="mainnav">
+  <div class="wrap">
+    <ul>
+      {{ range .Site.Params.rubriques }}
+      <li><a href="{{ "/" | relURL }}#{{ . | urlize }}">{{ . }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+</nav>

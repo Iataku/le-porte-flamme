@@ -1,0 +1,27 @@
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>La revue</h4>
+        <p class="manifesto">{{ .Site.Title }} publie chaque saison des enquêtes, reportages et débats qui pensent le politique et le culturel ensemble, sans les opposer.</p>
+      </div>
+      <div>
+        <h4>Rubriques</h4>
+        <ul>
+          {{ range .Site.Params.rubriques }}
+          <li><a href="{{ "/" | relURL }}#{{ . | urlize }}">{{ . }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      <div>
+        <h4>La revue</h4>
+        <ul>
+          <li><a href="#">Qui sommes-nous</a></li>
+          <li><a href="#">Nous soutenir</a></li>
+          <li><a href="#">Nous écrire</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">© {{ now.Year }} {{ upper .Site.Title }} — REVUE INDÉPENDANTE — TOUS DROITS RÉSERVÉS</div>
+  </div>
+</footer>
