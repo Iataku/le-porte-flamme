@@ -1,9 +1,5 @@
 # Configuration du site — Le Porte-Flamme
-#
-# IMPORTANT : remplace TON-PSEUDO et NOM-DU-DEPOT ci-dessous par tes
-# vraies valeurs GitHub une fois le dépôt créé, sinon les liens et images
-# risquent de ne pas s'afficher correctement une fois le site publié.
-baseURL = "https://TON-PSEUDO.github.io/NOM-DU-DEPOT/"
+baseURL = "https://le-porte-flamme.fr/"
 languageCode = "fr-fr"
 title = "Le Porte-Flamme"
 
