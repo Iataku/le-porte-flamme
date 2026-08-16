@@ -1,6 +1,6 @@
 <div class="topbar">
   <div class="wrap">
-    <span>{{ upper .Site.Title }} — FONDÉE EN 2019</span>
+    <span>{{ upper .Site.Title }} — FONDÉE EN 2026</span>
   </div>
 </div>
 
@@ -10,11 +10,7 @@
       <div class="logo-badge">
         <img src="{{ "images/logo.png" | relURL }}" alt="Logo {{ .Site.Title }}">
       </div>
-      <a href="{{ "/" | relURL }}" class="nameplate">{{ .Site.Title }}</a>
-    </div>
-    <div class="tagline-row">
-      <div class="tagline">{{ .Site.Params.tagline }}</div>
-      <div class="issue-info">PARAÎT CHAQUE SAISON</div>
+      <a href="{{ site.Home.RelPermalink }}" class="nameplate">{{ .Site.Title }}</a>
     </div>
   </div>
 </header>

@@ -6,10 +6,11 @@ site se reconstruit tout seul.
 
 ## Comment publier un nouvel article
 
-1. Va dans le dossier `content/articles/`
-2. Copie un fichier existant (par exemple `2026-08-16-financiarisation-logement.md`)
-   et renomme la copie, par exemple : `2026-09-03-mon-nouvel-article.md`
-3. Ouvre-le et remplace l'en-tête entre les `---` :
+1. Ouvre `modele-article.md` à la racine du projet et copie tout son contenu
+   (à partir de la ligne `---`)
+2. Colle-le dans un **nouveau** fichier que tu crées dans `content/articles/`,
+   nommé par exemple `2026-09-03-mon-nouvel-article.md`
+3. Remplace le contenu entre les `---` (l'en-tête) :
 
 ```yaml
 ---
@@ -69,6 +70,7 @@ Pour ajouter une cinquième rubrique un jour : ajoute-la dans `hugo.toml`
 
 ```
 porte-flamme-hugo/
+├── modele-article.md       ← à copier-coller pour rédiger un nouvel article
 ├── content/articles/       ← tes articles, un fichier .md par article
 ├── content/rubriques/      ← une page par rubrique (ne pas modifier sauf ajout de rubrique)
 ├── static/css/style.css    ← le style visuel du site (CSS séparé du HTML)
