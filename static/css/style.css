@@ -239,9 +239,9 @@ nav.mainnav a:hover{ background: var(--rouge); color:#fff; }
 .article-body em{ color:var(--ardoise); }
 .article-body a{ color:var(--rouge); text-decoration:underline; }
 
-.article-image{ margin: 32px 0; }
+.article-image{ margin: 32px 0; text-align:center; }
 .article-image img{
-  display:block;
+  display:inline-block;
   max-width:100%;
   height:auto;
   border: 2px solid var(--noir);
