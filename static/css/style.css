@@ -265,6 +265,21 @@ nav.mainnav a:hover{ background: var(--rouge); color:#fff; }
 .article-body em{ color:var(--ardoise); }
 .article-body a{ color:var(--rouge); text-decoration:underline; }
 
+.article-image{ margin: 32px 0; }
+.article-image img{
+  display:block;
+  width:100%;
+  height:auto;
+  border: 2px solid var(--noir);
+}
+.article-image figcaption{
+  font-family:var(--mono);
+  font-size:0.76rem;
+  color:var(--ardoise);
+  margin-top:10px;
+  letter-spacing:0.02em;
+}
+
 /* ---------- PIED DE PAGE ---------- */
 footer{
   background: var(--rouge);

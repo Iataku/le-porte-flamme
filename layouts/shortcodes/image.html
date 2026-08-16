@@ -1,0 +1,39 @@
+{{/*
+  Shortcode {{< image >}} — insère une image dans un article, en la
+  redimensionnant et en la compressant automatiquement au moment de la
+  publication. Aucune manipulation manuelle de l'image n'est nécessaire.
+
+  Utilisation dans un article :
+    {{< image src="ma-photo.jpg" alt="Description pour l'accessibilité" >}}
+
+  Avec une légende affichée sous l'image :
+    {{< image src="ma-photo.jpg" alt="Description" caption="Ma légende" >}}
+
+  Pour choisir une largeur différente de 900px par défaut :
+    {{< image src="ma-photo.jpg" alt="Description" largeur="500" >}}
+
+  IMPORTANT : le fichier image doit être placé dans le MÊME DOSSIER que
+  le fichier index.md de l'article (voir modele-article.md).
+*/}}
+
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $caption := .Get "caption" }}
+{{ $largeur := .Get "largeur" | default "900" }}
+
+{{ $image := .Page.Resources.GetMatch $src }}
+
+{{ if not $image }}
+  {{ errorf "Image « %s » introuvable pour l'article %q. Vérifie que le fichier image est bien placé dans le même dossier que index.md, et que le nom est orthographié à l'identique (majuscules/minuscules comprises)." $src .Page.Title }}
+{{ else }}
+  {{ $redimensionnee := $image.Resize (printf "%sx q82" $largeur) }}
+  <figure class="article-image">
+    <img
+      src="{{ $redimensionnee.RelPermalink }}"
+      width="{{ $redimensionnee.Width }}"
+      height="{{ $redimensionnee.Height }}"
+      alt="{{ $alt }}"
+      loading="lazy">
+    {{ with $caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+  </figure>
+{{ end }}

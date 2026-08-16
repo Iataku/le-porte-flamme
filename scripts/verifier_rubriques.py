@@ -63,12 +63,15 @@ def lire_rubrique_article(chemin_fichier):
 
 def verifier():
     rubriques_valides = lire_rubriques_autorisees()
-    fichiers = sorted(glob.glob(os.path.join(ARTICLES_DIR, "*.md")))
+    # Chaque article est maintenant un dossier contenant un index.md
+    # (structure "page bundle", nécessaire pour que les images puissent
+    # être placées à côté du texte de l'article).
+    fichiers = sorted(glob.glob(os.path.join(ARTICLES_DIR, "*", "index.md")))
 
     erreurs = []
 
     for chemin in fichiers:
-        nom_fichier = os.path.basename(chemin)
+        nom_fichier = os.path.basename(os.path.dirname(chemin))
         rubrique = lire_rubrique_article(chemin)
 
         if rubrique is None:
