@@ -40,6 +40,14 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Vérifier que toutes les rubriques sont valides
+        run: python3 scripts/verifier_rubriques.py
+
       - name: Construire le site avec Hugo
         env:
           HUGO_ENVIRONMENT: production
@@ -61,3 +69,4 @@ jobs:
       - name: Publier sur GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
