@@ -69,4 +69,3 @@ jobs:
       - name: Publier sur GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
