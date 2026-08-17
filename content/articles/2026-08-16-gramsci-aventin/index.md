@@ -4,7 +4,7 @@ date: 2026-08-16
 author: "Sonny C."
 rubrique: "Histoire"
 readingTime: "5 min"
-summary: "L'assassinat du député Matteotti en Italie à susciter une vague d'effroi"
+summary: "L'assassinat du député Matteotti en Italie à suscité une vague d'effroi. Les oppositions au régime fasciste de Mussolini font front unique sur l'Aventin"
 hero: true
 ---
 
