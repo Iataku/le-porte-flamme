@@ -26,6 +26,7 @@
         <p class="dek">{{ $hero.Params.summary }}</p>
         <div class="byline">
           <span><strong>Par {{ $hero.Params.author }}</strong></span>
+          <span>{{ $hero.Date.Format "02/01/2006" }}</span>
           <span>{{ $hero.Params.readingTime }}</span>
           <span>{{ $hero.Params.rubrique }}</span>
         </div>
