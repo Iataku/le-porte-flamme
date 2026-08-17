@@ -23,7 +23,7 @@
           <a href="{{ .RelPermalink }}">
             <h3>{{ .Title }}</h3>
             <p>{{ .Params.summary }}</p>
-            <span class="meta">{{ .Params.author }} — {{ .Params.readingTime }}</span>
+            <span class="meta">{{ .Params.author }} — {{ .Date.Format "02/01/2006" }} — {{ .Params.readingTime }}</span>
           </a>
         </article>
         {{ end }}

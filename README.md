@@ -118,7 +118,7 @@ porte-flamme-hugo/
 ├── modele-article.md       ← à copier-coller pour rédiger un nouvel article
 ├── content/articles/       ← tes articles, un dossier par article (index.md + images)
 ├── content/rubriques/      ← une page par rubrique (ne pas modifier sauf ajout de rubrique)
-├── static/css/style.css    ← le style visuel du site (CSS séparé du HTML)
+├── assets/css/style.css    ← le style visuel du site (CSS séparé du HTML)
 ├── static/images/          ← le logo et les images du site
 ├── layouts/                ← les gabarits HTML (structure des pages, ne pas modifier)
 ├── scripts/verifier_rubriques.py  ← vérifie les rubriques avant publication
