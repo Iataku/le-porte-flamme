@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.tagline }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
 
-<<meta name="google-site-verification" content="-pt9vs5LsokSDHloxUXbE4R2DI9-fOhyCXwHGiZd1r8"/>
+<meta name="google-site-verification" content="-pt9vs5LsokSDHloxUXbE4R2DI9-fOhyCXwHGiZd1r8" />
 
 {{/* Description affichée par Google sous le titre dans les résultats de recherche */}}
 {{ $description := .Site.Params.tagline }}
@@ -10,7 +10,9 @@
 <meta name="description" content="{{ $description }}">
 <link rel="canonical" href="{{ .Permalink }}">
 
-<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+{{ with resources.Get "css/style.css" }}
+<link rel="stylesheet" href="{{ .RelPermalink }}">
+{{ end }}
 
 <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
