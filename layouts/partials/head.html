@@ -1,7 +1,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
-<link rel="icon" type="image/png" href="{{ "images/logo.png" | relURL }}">
-<link rel="apple-touch-icon" href="{{ "images/logo.png" | relURL }}">
-{{ $style := resources.Get "css/style.css" | fingerprint }}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+<title>{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.tagline }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+
+<<meta name="google-site-verification" content="-pt9vs5LsokSDHloxUXbE4R2DI9-fOhyCXwHGiZd1r8"/>
+
+{{/* Description affichée par Google sous le titre dans les résultats de recherche */}}
+{{ $description := .Site.Params.tagline }}
+{{ if .Params.summary }}{{ $description = .Params.summary }}{{ end }}
+<meta name="description" content="{{ $description }}">
+<link rel="canonical" href="{{ .Permalink }}">
+
+<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+
+<link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="48x48" href="{{ "favicon-48x48.png" | relURL }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
+<link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
+<meta name="theme-color" content="#B01E23">

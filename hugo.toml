@@ -2,13 +2,14 @@
 baseURL = "https://le-porte-flamme.fr/"
 languageCode = "fr-fr"
 title = "Le Porte-Flamme"
+enableRobotsTXT = true
 
 # Les rubriques disponibles, dans l'ordre où elles apparaissent sur le site.
 # Pour ajouter une rubrique : ajoute-la ici ET utilise le même nom exact
 # dans le champ "rubrique" de tes articles.
 [params]
   tagline = "Revue politique et culturelle — nouvelle série"
-  rubriques = ["National", "International", "Culture", "Histoire"]
+  rubriques = ["National", "International", "Culture", "Histoire", "Local"]
 
 [markup.goldmark.renderer]
   # Autorise les articles à contenir un peu de HTML si besoin (facultatif,
