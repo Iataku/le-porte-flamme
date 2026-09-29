@@ -5,7 +5,7 @@ author: "VB"
 rubrique: "Culture"
 readingTime: "5 min"
 summary: "L’engagement du camarade Lafargue au sein du mouvement ouvrier et révolutionnaire fut incontestable. Aujourd’hui encore, une partie de la gauche dite “laïque et républicaine” et le parti communiste français sont dans le culte du travail comme les syndicats l’étaient du temps de Lafargue évoquant l’idée du droit au travail."
-hero: true
+hero: false
 ---
 
 ## Introduction à l'oeuvre de Paul Lafargue
