@@ -1,5 +1,5 @@
 ---
-title: "La Fermeture de Gibert Poitiers, une baisse de l'intérêt culturel ?"
+title: "[EN COURS]La Fermeture de Gibert Poitiers, une baisse de l'intérêt culturel ?"
 date: 2026-09-25
 author: "Sonny C."
 rubrique: "Local"
