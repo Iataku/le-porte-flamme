@@ -32,4 +32,4 @@ Les exactions commises par la police ne se sont pas arrêtées là : de nombreux
 
 **Nous avons peur, nous sommes terrifiés d’aller en manifestation. Ces « gardiens de la paix » ne sont plus que des forces de l’ordre, monopolisatrices de la violence. Mais il faut continuer, pour notre futur commun, pour briser ce présent qui nous opprime, et enfin mettre au passé le terme de capitalisme.**
 
-À samedi prochain.
+À samedi prochain. 

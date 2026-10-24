@@ -5,7 +5,7 @@ author: "Sonny C."
 rubrique: "Histoire"
 readingTime: "5 min"
 summary: "L'assassinat du député Matteotti en Italie à suscité une vague d'effroi. Les oppositions au régime fasciste de Mussolini font front unique sur l'Aventin"
-hero: true
+hero: false
 ---
 
 Giacomo Matteotti, député italien socialiste est assassiné par un groupe armé fasciste le 30 mai 1924. Ce meurtre provoque un choc dans tout le pays, même au sein des soutiens de Mussolini. De fait, l'opposition du gouvernement au sein du parlement (élu en 1924) comportant les socialistes (unitaire et maximaliste), les libéraux et les communistes,  refusent de se rendre au parlement et se retire sur l'Aventin comme la plèbe romaine l'avait fait pour protester contre le Sénat. Cependant un désaccord grandissant provoque une rupture avec les communistes. 
