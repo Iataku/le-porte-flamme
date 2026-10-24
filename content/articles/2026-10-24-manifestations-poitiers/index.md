@@ -1,5 +1,5 @@
 ---
-title: "Violences policières à manifestation du 24 octobre à Poitiers"
+title: "Violences policières à la manifestation du 24 octobre à Poitiers"
 date: 2026-10-24
 author: "Sonny C."
 rubrique: "Local"
