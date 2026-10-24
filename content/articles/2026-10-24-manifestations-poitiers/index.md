@@ -1,6 +1,6 @@
 ---
-title: "Scandales dans la manifestation du 24 octobre à Poitiers"
-date: 2026-10-25
+title: "Violences policières à manifestation du 24 octobre à Poitiers"
+date: 2026-10-24
 author: "Sonny C."
 rubrique: "Local"
 readingTime: "5 min"
