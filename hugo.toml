@@ -2,6 +2,7 @@
 baseURL = "https://le-porte-flamme.fr/"
 languageCode = "fr-fr"
 title = "Le Porte-Flamme"
+timeZone = "Europe/Paris"
 enableRobotsTXT = true
 
 # Les rubriques disponibles, dans l'ordre où elles apparaissent sur le site.
