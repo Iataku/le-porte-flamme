@@ -5,7 +5,7 @@ author: "Sonny C."
 rubrique: "Local"
 readingTime: "5 min"
 summary: "Les étudiants réagissent partout en France concernant l'attaque de plusieurs de leurs droits, dont la principale révolte concerne les Aides Personnelles au Logement (APL), qui sont supprimées pour certains, baissées pour d'autres. Qu'en est-il des réactions étudiantes locales autour de Poitiers ?"
-hero: true
+hero: false
 ---
 
 Les étudiants réagissent partout en France concernant l'attaque de plusieurs de leurs droits, dont la principale révolte concerne les Aides Personnelles au Logement (APL), qui sont supprimées pour certains, baissées pour d'autres.
