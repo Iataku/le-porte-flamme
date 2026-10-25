@@ -4,7 +4,7 @@ date: 2026-10-25
 author: "Sonny C."
 rubrique: "Local"
 readingTime: "3 min"
-summary: "Durant la manifestation du 24 octobre, de nombreuses personnes vêtus de noirs ce sont mis entre la foule et les policiers. Voici le témoignage de l'un deux lorsque les forces de l'ordre ont évacués de force à coup de grenades et de gaz lacrymogène, la place de la mairie."
+summary: "Durant la manifestation du 24 octobre, de nombreuses personnes vêtues de noir se sont mises entre la foule et les policiers. Voici le témoignage de l’un d'entre eux lorsque les forces de l’ordre ont évacué de force, à coups de grenades et de gaz lacrymogène, la place de la mairie."
 hero: true
 ---
 
